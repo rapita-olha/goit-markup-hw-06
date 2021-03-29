@@ -163,9 +163,9 @@ button {
     width: 100%;
     height: 4px;
     background-color: var(--accent-color);
-    color: var(--accent-color);
     background-size: auto;
     border-radius: 2px;
+    transform: translateY(1px)
 }
 
 /* .Contacts section */
@@ -200,9 +200,8 @@ button {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.auth-icon:hover ,
-.auth-icon:focus {
-    fill: var(--accent-color);
+.auth-icon {
+    fill: currentColor;
 }
 
 .tel-link {
@@ -215,20 +214,17 @@ button {
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--discription-text-color);
-    fill: var(--discription-text-color);
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .mail-link:hover,
 .mail-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 .tel-link:hover,
 .tel-link:focus {
   color: var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* Hero section */
@@ -628,6 +624,8 @@ button {
 }
 
 .footer-container {
+    width: 1200px;
+    margin: 0 auto;
     display: flex;
     align-items: baseline;  
 }
@@ -638,6 +636,7 @@ button {
 
 .footer-wraper {
     align-items: baseline;
+    
 }
 
 .logo-footer {
@@ -743,7 +742,7 @@ button {
     display: flex;
     align-items: baseline;
     justify-content: center;
-    margin-left: 93px;
+    margin-left: 109px;
 }
   
 .footer-form-title {
@@ -753,7 +752,7 @@ button {
     text-transform: uppercase;
     color: var(--white-text-back-color);
     margin-bottom: 20px;
-    margin-left: 93px;
+    margin-left: 101px;
 }
   
 .footer-input-text {
@@ -893,17 +892,25 @@ button {
 .portfolio-item {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
-    margin-top: 30px;   
+    margin-top: 30px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .cards-hover {
     position: relative;
-  }
-  
-.cards-cover {
-    position: absolute;
+}
+
+.overlay {
+    position:absolute;
     bottom: 0;
     left: 0;
+    width: 100%;
+    height: 100%;
+  }  
+
+.cards-cover {
+    position: absolute;
     padding: 63px 24px;
     height: 0px;
     width: 100%;
@@ -929,10 +936,10 @@ button {
     height: 294px;
 }
 
-.project-cards-link:hover .card-description {
+/*.project-cards-link:hover .card-description {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
-}
+}*/
 
 .portfolio-desc-card {
     padding: 20px 24px;
