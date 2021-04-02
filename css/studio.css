@@ -631,12 +631,12 @@ button {
 }
 
 .box-foot {
-    margin-right: 75px;
+    margin-right: 65px;
 }
 
 .footer-wraper {
     align-items: baseline;
-    
+
 }
 
 .logo-footer {
@@ -893,8 +893,7 @@ button {
     flex-basis: calc(100% / 3 - 30px);
     margin-left: 30px;
     margin-top: 30px;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
+    
 }
 
 .cards-hover {
@@ -935,11 +934,6 @@ button {
     opacity: 1;
     height: 294px;
 }
-
-/*.project-cards-link:hover .card-description {
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
-      0px 2px 1px rgba(0, 0, 0, 0.2);
-}*/
 
 .portfolio-desc-card {
     padding: 20px 24px;
@@ -1135,7 +1129,7 @@ button {
 }
   
 .modal-form-term:checked + .modal-form-check-desc::before {
-    background-image: url("../img/vector.svg");
+    background-image: url("../images/icon_check.png");
     background-repeat: no-repeat;
     background-position: center;
     background-color: var(--accent-color);
